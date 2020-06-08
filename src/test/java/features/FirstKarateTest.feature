@@ -42,23 +42,18 @@ Feature: : Welcome to karate
 
   Scenario: more difficult parameters: json array objects
     * def students =
-        """
-        [
-          {
-        'name' : 'May',
-        'isAwesome : 'yes'
-          },
-         {
-        'name' : 'Ferus',
-        'isAwesome' : 'yes'
-         }
-        ]
-        """
+    """
+    [
+      {
+          'name': 'Ferus',
+          'isAwesome': 'yes of course'
+      },
+      {
+         'name': 'Arman',
+          'isAwesome': 'yes of course'
+      }
+    ]
+    """
     * print students
     * print students[0].name
-    * print students[0].isAwesome
-
-
-
-
-
+    * print students[1].name

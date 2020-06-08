@@ -4,8 +4,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Karate.class)
 @KarateOptions(
-
         tags = "@fight"
 )
-public class KarateRunner {
+public class FeatureRunner {
 }
+
